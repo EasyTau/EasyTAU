@@ -1,0 +1,105 @@
+﻿<resources>
+    <string name="app_name">EasyTAU</string>
+    <string name="title_activity_maps">Map and Navigation</string>
+    <string name="choose_all">בחר/י הכל</string>
+    <string name="building">פקולטות</string>
+    <string name="parking">חניונים</string>
+    <string name="food">קפיטריות</string>
+    <string name="lib">ספריות</string>
+    <string name="sport">מרכזי ספורט</string>
+    <string name="dorms">מעונות</string>
+    <string name="gate">שערים</string>
+    <string name="amun">קפה אמון</string>
+    <string name="general">שונות</string>
+    <string name="textview">TextView</string>
+
+    <string name="student_site">&lt;a href="http://www.student.co.il/חניונים">
+ לקבלת הנחה בחניונים לחצו כאן &lt;/a></string>
+
+    <string-array name="PlacesList">
+        <item>בחר/י קטגוריה</item>
+        <item>קפיטריות</item>
+        <item>קפה אמון</item>
+        <item>ספריות</item>
+        <item>חניונים</item>
+        <item>שערים</item>
+        <item>מרכזי ספורט</item>
+        <item>שונות</item>
+    </string-array>
+
+    <string name="open_button_container">פתיחת ניווט</string>
+    <string name="close_button_container">סגירת ניווט</string>
+    <string name="open_button_container2">פתיחת סינון</string>
+    <string name="close_button_container2">סגירת סינון</string>
+    <string name="search_button_maps_activity">מציאת מסלול</string>
+    <string name="search_button_course_nav">חיפוש קורס</string>
+    <string name="navigation_field_source_text">"נא הזינו כתובת מקור"</string>
+    <string name="navigation_field_destination_text">"נא הזינו כתובת יעד"</string>
+    <string name="course_nav_field_text">"נא הזינו את שם הקורס"</string>
+    <string name="menu_msg">"בלחיצה על החלון יפתח המחירון המפוקח"</string>
+    <string name="no_building">"אין מידע אודות הבניין של קורס זה"</string>
+    <string name="no_gps">המיקום הנוכחי שלך לא ידוע. על מנת להשתמש בניווט יש להפעיל את הגדרת המיקום במכשירך</string>
+    <string name="loading_text"> <![CDATA[
+\n\ טוען נתונים עדכניים \n\
+אנא המתינו...
+]]> </string>
+    <string name="welcome">"ברוכים הבאים ל-EasyTAU"</string>
+
+    <string name="ex1"> <![CDATA[  \n
+ סטודנטים/ות יקרים/ות !\n
+\n\
+ מקווים שאתם/ן נהנים/ות מהאפליקציה ועושים/ות בה שימוש רב.
+ הרעיון לאפליקציה הגיע מתוך צורך אמיתי שהיה לנו כסטודנטים באוניברסיטה,
+ ואנו מקווים שכמה שיותר סטודנטים וסטודנטיות יורידו אותה ויעזרו בה!
+\n\
+]]> </string>
+
+    <string name="ex3"> <![CDATA[  \n
+ \n EasyTAU צוות
+]]> </string>
+
+    <string name="exp"> <![CDATA[
+   האפליקצייה שתעשה לכם/ן חיים קלים ונוחים יותר באוניברסיטה!\n
+
+\n\
+
+    בעזרת EasyTAU תוכלו מהיום -\n
+    - לנווט ולהתמצא ברחבי האוניברסיטה\n
+    - להגיע בקלות ובמהירות לכל בניין ולכל קורס\n
+    - לבדוק את תפוסת החניונים בכל זמן נתון\n
+    - להתעדכן במועדי לוח השנה האוניברסיטאי\n
+  - למצוא נקודות ציון בקרבת מיקומכם/ן\n
+  - לאתר את הטלפונים הנחוצים לכם/ן בכל עת\n
+    - להגיע בלחיצה למחירוני הקפיטריות\n
+    - למצוא קישור להזמנת חדרי ספרייה\n
+    - לקבל מידע על שעות פעילות המזכירויות והשערים השונים\n
+    - ועוד ועוד...\n
+
+\n\
+
+    רק עוד כמה שניות עבור טעינת הנתונים הראשונית ואנחנו מתחילים!\n
+]]> </string>
+
+
+    <string name="phone_category">"קטגוריה:"</string>
+    <string name="phone_unit">"יחידה:"</string>
+    <string name="phone_name">"שם:"</string>
+
+    <string name="menu_parking">"חניונים"</string>
+    <string name="menu_calendar">"לוח שנה"</string>
+    <string name="menu_phones">"אלפון"</string>
+    <string name="menu_map">"מפה וניווט כללי"</string>
+    <string name="menu_nearme">"קרוב אליי"</string>
+    <string name="menu_courses_navigation">"ניווט לפי קורס"</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_hide">Hide Panel</string>
+    <string name="action_show">Show Panel</string>
+    <string name="action_anchor_enable">Enable Anchor Point</string>
+    <string name="action_anchor_disable">Disable Anchor Point</string>
+    <string name="hello"><![CDATA[<b>The Awesome Sliding Up Panel</b><br/> Brought to you by<br/><a href="http://umanoapp.com">http://umanoapp.com</a>]]></string>
+    <string name="follow"><![CDATA[Follow us<br/>on <a href="http://twitter.com/umanoapp">Twitter</a>]]></string>
+
+
+
+
+</resources>
