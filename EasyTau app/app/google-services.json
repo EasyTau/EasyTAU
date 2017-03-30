@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "453052883034",
+    "firebase_url": "https://easytau-3de5a.firebaseio.com",
+    "project_id": "easytau-3de5a",
+    "storage_bucket": "easytau-3de5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453052883034:android:bbe1c695366bfb16",
+        "android_client_info": {
+          "package_name": "com.easytau.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453052883034-2ifiim0rn2gmgbh237uce6jdq20k0ane.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8jJ2mQoi7uPqA0juXrcNXRymxqmj7L-M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453052883034:android:146d9715a8b5d29d",
+        "android_client_info": {
+          "package_name": "com.example.easytau"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453052883034-2ifiim0rn2gmgbh237uce6jdq20k0ane.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8jJ2mQoi7uPqA0juXrcNXRymxqmj7L-M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453052883034:android:e6e129150692d315",
+        "android_client_info": {
+          "package_name": "com.example.easytau_m1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453052883034-fgj4o82jo0h0v5dvs1dqq6ba3r6fdv8r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.easytau_m1",
+            "certificate_hash": "77ED7992D4B9B246FC26203F0772251C5850D3A3"
+          }
+        },
+        {
+          "client_id": "453052883034-2ifiim0rn2gmgbh237uce6jdq20k0ane.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8jJ2mQoi7uPqA0juXrcNXRymxqmj7L-M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453052883034-2ifiim0rn2gmgbh237uce6jdq20k0ane.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

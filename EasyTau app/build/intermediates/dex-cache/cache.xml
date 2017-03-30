@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\shir\Desktop\EasyTau\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a417eaef00f45ff1ac02a79911fc9bf324a8897">
+        <dex dex="C:\Users\shir\Desktop\EasyTau\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b2f7a1992f2a12e545f2f484e202b5bf205faa3b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shir\Desktop\EasyTau\app\libs\maven-core-3.0.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e210adcae0bef330131519e5a0893d648db36834">
+        <dex dex="C:\Users\shir\Desktop\EasyTau\app\build\intermediates\transforms\dex\debug\folders\1000\2\maven-core-3.0.3_3eb32da75a0859e33fef6fee5c54b803efcbba05\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shir\Desktop\EasyTau\app\libs\mongo-java-driver-3.2.0-SNAPSHOT.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="862e29a17a22cdbbdf5a5cfa5bb8d97b2cfd1548">
+        <dex dex="C:\Users\shir\Desktop\EasyTau\app\build\intermediates\transforms\dex\debug\folders\1000\2\mongo-java-driver-3.2.0-SNAPSHOT_17a3768a470cf3271ce450eeccfb4970a1649fcd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shir\Desktop\EasyTau\app\libs\json-simple-1.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5d6f9b6a9ddca2a28c0216cc44efb2e20d9c23b5">
+        <dex dex="C:\Users\shir\Desktop\EasyTau\app\build\intermediates\transforms\dex\debug\folders\1000\2\json-simple-1.1.1_136e9df886cfc031889a9b010daf0a8c5f52e996\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\shir\Desktop\EasyTau\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\shir\Desktop\EasyTau\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b8561d183ae0451931f71447429873bb8bd135ea\classes.dex" />
+    </item>
+
+</items>
