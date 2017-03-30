@@ -1,0 +1,13 @@
+[{"name": "חניון מדעי החברה" , "type":"parking", "coord1": "32.11051", "coord2": "34.80266", "info":"שעות פעילות: 24/7\nטלפון: 03-7610300", "url":"", "logo":"ic_ahuzat_hof","parkingLot":"מדעי החברה"},
+  {"name": "חניון מיטשל - מרכז הסטודנטים" , "type":"parking", "coord1": "32.114131", "coord2": "34.801791", "info":"שעות פעילות: 24/7\nטלפון: 03-7610300", "url":"", "logo":"ic_ahuzat_hof","parkingLot":"מיטשל - מרכז הסטודנטים"},
+  {"name": "חניון רפואת שיניים 1" , "type":"parking", "coord1": "32.117502", "coord2": "34.803828", "info":"שעות פעילות: 24/7\nטלפון: 03-7610300", "url":"", "logo":"ic_ahuzat_hof","parkingLot":"רפואת שיניים 1"},
+  {"name": "חניון רפואת שיניים 2" , "type":"parking", "coord1": "32.117452", "coord2": "34.804971", "info":"שעות פעילות: 24/7\nטלפון: 03-7610300", "url":"", "logo":"ic_ahuzat_hof","parkingLot":"רפואת שיניים 2"},
+  {"name": "חניון מרשם" , "type":"parking", "coord1":  "32.117679", "coord2": "34.806962", "info":"שעות פעילות: 24/7\nטלפון: 03-7610300", "url":"", "logo":"ic_ahuzat_hof","parkingLot":"מירשם"},
+  {"name": "חניון ברושים- הנדסאים" , "type":"parking", "coord1": "32.106472", "coord2":"34.801254", "info":"שעות פעילות: 24/7\nטלפון: 03-7610300", "url":"", "logo":"ic_ahuzat_hof","parkingLot":"ברושים - הנדסאים"},
+  {"name": "חניון עבודה סוציאלית" , "type":"parking", "coord1": "32.108065", "coord2": "34.804628" , "info":"שעות פעילות: 24/7\nטלפון: 03-7610300", "url":"", "logo":"ic_ahuzat_hof","parkingLot":"ג'ורג' וויז מערב/מזרח - עבודה סוציאלית"},
+  {"name": "חניון סמולרש" , "type":"parking", "coord1": "32.109625", "coord2": "34.803786", "info":"שעות פתיחה:\n   ימים א'-ה' 7:00-23:00\n   שישי 7:00-13:00\n טלפון: 03-7610300", "url":"", "logo":"ic_ahuzat_hof","parkingLot":"סמולרש"},
+  {"name": "חניון מעונות" , "type":"parking", "coord1": "32.108432", "coord2": "34.805191", "info":"שעות פעילות: 24/7\n טלפון: 03-7610300", "url":"", "logo":"ic_ahuzat_hof","parkingLot":"מעונות"},
+  {"name": "חניון כלכלה" , "type":"parking", "coord1": "32.107825", "coord2": "34.802595", "info":"שעות פעילות: 24/7\n טלפון: 03-7610300", "url":"", "logo":"ic_ahuzat_hof","parkingLot":"כלכלה"},
+  {"name": "חניון מרכז הספורט" , "type":"parking", "coord1": "32.115653", "coord2": "34.801879", "info":"שעות פתיחה:\n   ימים א'-ה' 5:30-24:00\n   שישי 6:45-20:00\n טלפון: *8909", "url":"", "logo":"ic_ahuzat_hof"},
+  {"name": "חניון הבית הירוק" , "type":"parking", "coord1": "32.107938", "coord2": "34.803287", "info":"שעות פעילות: 24/7\nטלפון: 03-7610300", "url":"", "logo":"ic_ahuzat_hof"},
+  {"name": "חניון הנדסה" , "type":"parking", "coord1": "32.108663", "coord2":"34.806135" , "info": "", "url":"", "logo":"ic_ahuzat_hof"}]
