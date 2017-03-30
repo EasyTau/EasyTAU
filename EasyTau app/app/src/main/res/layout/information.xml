@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/entrance_background" >
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/parking_lot_header"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#397986"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/home_button"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/home_button"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_weight="0.1">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/header_info"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/header_info" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:text="@string/ex1"
+            android:textSize="18sp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:textColor="#656567"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/first"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/linkToWeb"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#397986"
+            android:linksClickable = "true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/second"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#397986"
+            android:linksClickable = "true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center">
+        </LinearLayout>
+
+        <ImageView
+            android:background="@drawable/name"
+            android:layout_height="25dp"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/image"/>
+
+        <ImageView
+            android:background="@drawable/back_img"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:id="@+id/img"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

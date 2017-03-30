@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_near_me"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/entrance_background" >
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/parking_lot_header"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#397986"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/home_button"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/home_button"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_weight="0.1">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/back_choose_unit"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/phon_title" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/phone_category"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:textColor="?attr/colorAccent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chooseCategory" />
+
+            <Spinner
+                android:id="@+id/categorySpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:background="@drawable/spinner_back_left_2"
+                android:popupBackground="@color/spinner_colorback"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/phone_unit"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:textColor="?attr/colorAccent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chooseUnit" />
+
+            <Spinner
+                android:id="@+id/unitSpinner"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/spinner_back_left_2"
+                android:popupBackground="@color/spinner_colorback"
+                android:layout_marginRight="8dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/phone_name"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:textColor="?attr/colorAccent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chooseName" />
+
+            <Spinner
+                android:id="@+id/nameSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"
+                android:layout_marginLeft="8dip"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:background="@drawable/spinner_back_left_2"
+                android:popupBackground="@color/spinner_colorback"
+                android:layout_marginRight="8dip" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.28">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:textColor="#656567"
+            android:layout_height="65dp"
+            android:src="@drawable/tau_logo_big"
+            android:layout_gravity="center"
+            android:id="@+id/Logo"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/phoneUnit"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:typeface="serif"
+            android:textColor="#312782"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:id="@+id/phoneName"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#656567"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/phoneNumber"
+            android:autoLink="phone"
+            android:textColor="#656567"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/faxNumber"
+            android:autoLink="phone"
+            android:textColor="#656567"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/dialButton"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/rsz_21rsz_phone_numbers_icon"
+            android:background="@drawable/custom_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_near_me"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/entrance_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/parking_lot_header"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#397986"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/home_button"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/home_button"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_weight="0.1">
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/findParking"
+        android:layout_gravity="center"
+        android:background="@drawable/choose_parking" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textColor="#312782"
+        android:textSize="20sp"
+        android:text="@string/loading_text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="gone"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:indicatorColor="@color/colorPrimary"
+        />
+
+    <ImageView
+        android:layout_width="147dp"
+        android:layout_height="81dp"
+        android:src="@drawable/ahuzothof_big"
+        android:layout_gravity="center"
+        android:id="@+id/ahuzalHofLogo"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parkingName"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="#312782"
+        android:textSize="22sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#656567"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_status"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#4fadb7"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:textSize="15sp"
+        android:textColor="#656567"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceDay"
+        android:textSize="15sp"
+        android:textColor="#656567"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notes"
+        android:textSize="15sp"
+        android:textColor="#656567"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notesStudents"
+        android:textSize="15sp"
+        android:textColor="#656567"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linkToWeb"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#397986"
+        android:linksClickable = "true"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/Marker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/rsz_rsz_map_icon"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/choose_parking_button"
+        android:visibility="invisible"/>
+
+</LinearLayout>

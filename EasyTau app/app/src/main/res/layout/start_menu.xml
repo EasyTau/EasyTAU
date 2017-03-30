@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.easytau.StartMenu"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6"
+    android:background="@drawable/entrance_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center">
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:background="@drawable/logo"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/parking_lot_icon"
+                android:id="@+id/getParking"
+                android:layout_weight="0.5"
+                android:scaleType="fitCenter"
+                android:background="@drawable/custom_button" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40sp"
+                android:text="@string/menu_parking"
+                android:id="@+id/tv1"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/calander_icon"
+                android:id="@+id/getCalander"
+                android:layout_weight="0.5"
+                android:scaleType="fitCenter"
+                android:background="@drawable/custom_button"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40sp"
+                android:text="@string/menu_calendar"
+                android:id="@+id/tv2"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                app:srcCompat="@drawable/phone_numbers_icon"
+                android:id="@+id/getPhones"
+                android:layout_weight="0.5"
+                android:scaleType="fitCenter"
+                android:background="@drawable/custom_button" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40sp"
+                android:text="@string/menu_phones"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:id="@+id/tv3"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/map_icon"
+                android:gravity="center"
+                android:id="@+id/getMap"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_weight="0.5"
+                android:scaleType="fitCenter"
+                android:background="@drawable/custom_button" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40sp"
+                android:text="@string/menu_map"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:id="@+id/tv4"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                app:srcCompat="@drawable/course_navigation"
+                android:id="@+id/profile_icon"
+                android:layout_weight="0.5"
+                android:scaleType="fitCenter"
+                android:background="@drawable/custom_button" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40sp"
+                android:text="@string/menu_courses_navigation"
+                android:id="@+id/tv5"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/near_me_icon"
+                android:gravity="center"
+                android:id="@+id/near_me_icon"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_weight="0.5"
+                android:scaleType="fitCenter"
+                android:background="@drawable/custom_button" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40sp"
+                android:text="@string/menu_nearme"
+                android:id="@+id/tv6"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/info"
+            android:gravity="center"
+            android:id="@+id/info_icon"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_weight="0.5"
+            android:scaleType="fitCenter"
+            android:background="@drawable/custom_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center">
+    </LinearLayout>
+
+</LinearLayout>

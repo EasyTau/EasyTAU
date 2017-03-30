@@ -1,0 +1,321 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_near_me"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/parking_lot_header"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#397986"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/home_button"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/home_button"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_weight="0.1">
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        sothree:umanoPanelHeight="29dp"
+        sothree:umanoShadowHeight="4dp"
+        sothree:umanoDragView="@+id/dragView"
+        sothree:umanoOverlay="true"
+        sothree:umanoScrollableView="@+id/list">
+
+        <!-- MAIN CONTENT -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:id="@+id/buttonFilterOpen"
+                style="@style/ButtonTurkizClose"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:text="@string/open_button_container2"
+                android:visibility="visible"/>
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/buttonFilterOpen"
+
+                />
+
+            <com.wunderlist.slidinglayer.SlidingLayer
+                android:id="@+id/slidingLayer2"
+                android:layout_width="@dimen/filter_layer_size"
+                android:layout_height="match_parent"
+                android:elevation="2dip">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/buttonFilterClose"
+                    style="@style/ButtonTurkizOpen"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/close_button_container2"
+                    android:visibility="invisible"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#E6ffffff"
+                        android:gravity="center"  >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/choose_all"
+                                android:id="@+id/chooseAll"
+                                android:checked="false"
+                                android:onClick="onCheckSelect"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/building"
+                                android:id="@+id/building"
+                                android:checked="true"
+                                android:onClick="onCheckSelect"/>
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/food"
+                                android:id="@+id/food"
+                                android:checked="false"
+                                android:onClick="onCheckSelect"/>
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/parking"
+                                android:id="@+id/parking"
+                                android:checked="false"
+                                android:onClick="onCheckSelect"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:gravity="center">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lib"
+                                android:id="@+id/lib"
+                                android:checked="true"
+                                android:onClick="onCheckSelect"/>
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sport"
+                                android:id="@+id/sport"
+                                android:checked="false"
+                                android:onClick="onCheckSelect"/>
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gate"
+                                android:id="@+id/gate"
+                                android:checked="false"
+                                android:onClick="onCheckSelect"/>
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dorms"
+                                android:checked="false"
+                                android:onClick="onCheckSelect"
+                                android:id="@+id/dorms" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/amun"
+                                android:checked="false"
+                                android:onClick="onCheckSelect"
+                                android:id="@+id/emon" />
+
+                            <CheckBox
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/general"
+                                android:checked="false"
+                                android:onClick="onCheckSelect"
+                                android:id="@+id/general" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </com.wunderlist.slidinglayer.SlidingLayer>
+
+
+
+        </RelativeLayout>
+
+        <!-- SLIDING LAYOUT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="#ffffff"
+            android:orientation="vertical"
+
+            android:clickable="true"
+            android:focusable="false"
+            android:id="@+id/dragView">
+
+
+            <com.example.easytau.CustomAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/textOrigin"
+                android:ems="18"
+                android:hint="@string/navigation_field_source_text" />
+
+            <com.example.easytau.CustomAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textDestination"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="2dp"
+                android:ems="18"
+                android:hint="@string/navigation_field_destination_text" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/search_button_maps_activity"
+                android:layout_gravity="right"
+                android:id="@+id/btnFindPath" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/buttonOpen"
+                    style="@style/ButtonTurkizOpen"
+                    android:visibility="visible"
+                    android:text="@string/open_button_container"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textStyle="bold"
+                    android:id="@+id/buttonClose"
+                    style="@style/ButtonTurkizClose"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/close_button_container"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+
+
+</LinearLayout>
