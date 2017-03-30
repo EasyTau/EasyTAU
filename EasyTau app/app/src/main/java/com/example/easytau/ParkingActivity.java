@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -19,6 +20,7 @@ import android.support.v4.app.ActivityCompat;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
@@ -142,6 +144,10 @@ public class ParkingActivity extends AppCompatActivity implements ParkingLotList
             while (TotalInfoFromDb.getParkingLotListM().size()==0){
             }
 
+
+        /*get current location */
+
+
             parkingLotListM = TotalInfoFromDb.getParkingLotListM();
 
             final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(ParkingActivity.this, android.R.layout.select_dialog_item){
@@ -159,7 +165,6 @@ public class ParkingActivity extends AppCompatActivity implements ParkingLotList
             for (ParkingLot parking :parkingLotListM) {
                 stringSet.add(parking.getName());
             }
-
 
             arrayAdapter.addAll(stringSet);
 
@@ -257,6 +262,9 @@ public class ParkingActivity extends AppCompatActivity implements ParkingLotList
         return formatter.format(calendar.getTime());
     }
 
+
+
+
     public void windowChoice(final ArrayAdapter<String> arrayAdapter) {
 
         AlertDialog.Builder builderSingle = new AlertDialog.Builder(ParkingActivity.this);
@@ -267,10 +275,29 @@ public class ParkingActivity extends AppCompatActivity implements ParkingLotList
         builderSingle.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-                home_button.setVisibility(View.VISIBLE);
-                findParking.setVisibility(View.VISIBLE);
-                logoAhuzatHof.setVisibility(View.VISIBLE);
+                if (name.getVisibility()!= View.VISIBLE){
+                    Intent intent = new Intent(ParkingActivity.this, StartMenu.class);
+                    startActivity(intent);
+                }
+
+            }
+
+
+
+        });
+
+
+        builderSingle.setOnKeyListener(new Dialog.OnKeyListener() {
+
+            @Override
+            public boolean onKey(DialogInterface arg0, int keyCode,
+                                 KeyEvent event) {
+                // TODO Auto-generated method stub
+                if (keyCode == KeyEvent.KEYCODE_BACK) {
+                    finish();
+
+                }
+                return true;
             }
         });
 
@@ -284,6 +311,7 @@ public class ParkingActivity extends AppCompatActivity implements ParkingLotList
                 name.setText("חניון "+strName);
                 name.setPaintFlags(name.getPaintFlags());
                 name.setVisibility(View.VISIBLE);
+                //name.setSingleLine();
 
                 ParkingLot chosenParking =null;
                 for (ParkingLot parking :parkingLotListM) {
@@ -377,6 +405,9 @@ public class ParkingActivity extends AppCompatActivity implements ParkingLotList
 
 
 
+
+
+
                 SpannableString addTitle = new SpannableString("כתובת החניון: "+ chosenParking.getAddress() );
                 addTitle.setSpan(new ForegroundColorSpan(Color.DKGRAY),0,12,0);
                 address.setText(addTitle);
@@ -397,15 +428,11 @@ public class ParkingActivity extends AppCompatActivity implements ParkingLotList
                 notesStud.setText(notesStudTitle);
                 notesStud.setVisibility(View.VISIBLE);
 
-                // String text = "www.student.co.il/חניונים";
-                //linkToWeb.setText(text);
+
                 linkToWeb.setMovementMethod(LinkMovementMethod.getInstance());
 
                 linkToWeb.setText(Html.fromHtml(getResources().getString(R.string.student_site)));
-                //jmt: pattern we want to match and turn into a clickable link
-                //Pattern pattern = Pattern.compile("student.co.il/?CategoryID=1991&ArticleID=10112");
-                //jmt: prefix our pattern with http://
-                //Linkify.addLinks(linkToWeb, pattern, "http://");
+
 
                 linkToWeb.setVisibility(View.VISIBLE);
 

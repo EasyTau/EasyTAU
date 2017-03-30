@@ -386,9 +386,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             public void onClick(View v) {
 
                 sendRequest(v);
-                textOrigin.setText("");
-                textDestination.setText("");
-
 
             }
         });
@@ -658,6 +655,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected void onResume() {
         super.onResume();
         navigationSlidingPanel.setPanelState(SlidingUpPanelLayout.PanelState.COLLAPSED);
+        textOrigin.setText("");
+        textDestination.setText("");
         btnOpenNav.setVisibility(View.VISIBLE);
         btnCloseNav.setVisibility(View.GONE);
         if (mGoogleApiClient.isConnected() && mRequestingLocationUpdates) {
