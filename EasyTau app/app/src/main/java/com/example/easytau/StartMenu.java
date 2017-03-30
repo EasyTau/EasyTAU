@@ -393,7 +393,7 @@ public class StartMenu extends AppCompatActivity {
         locationRequest.setFastestInterval(5 * 1000);//5 sec Time interval for location update
         LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
                 .addLocationRequest(locationRequest);
-        builder.setAlwaysShow(false); //this is the key ingredient to show dialog always when GPS is off
+        builder.setAlwaysShow(true); //this is the key ingredient to show dialog always when GPS is off
 
         PendingResult<LocationSettingsResult> result =
                 LocationServices.SettingsApi.checkLocationSettings(mGoogleApiClient, builder.build());
@@ -509,8 +509,9 @@ public class StartMenu extends AppCompatActivity {
                     if (mGoogleApiClient == null) {
                         initGoogleAPIClient();
                         showSettingDialog();
-                    } else
-                        showSettingDialog();
+                    }
+                       // showSettingDialog();
+
 
 
                 } else {
